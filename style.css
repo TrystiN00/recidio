@@ -73,6 +73,10 @@ h3{
     border-color: white;
     background-color: black;
     box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+.fa-angle-down{
+    animation: arrow 1.5s infinite linear;  /*linear=jednostajnie*/
 }
 
 @media (orientation: portrait ){
@@ -96,8 +100,9 @@ h3{
     }
 }
 
+
 @keyframes arrow{
-    0% {}
-    50% {}
-    100% {}
+    0% {transform: translateY(-80px)}
+    50% {transform: translateY(0px)}
+    100% {transform: translateY(80px)}
 }
