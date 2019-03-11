@@ -93,14 +93,38 @@ h3{
     }
 }
 
-@media (min-width: 600px max-width:1090px){
-    
+
+
+@media(min-width: 576px){
+    h1 {font-size: 4rem};
+}
+@media(min-width: 768px){
+    h1 {font-size: 5rem};
+}
+@media(min-width:1024px){
+    h1 {font-size: 6rem};
+}
+@media(min-width: 1280px){
+    h1 {font-size: 7rem};
+}
+@media(min-width: 1600px){
+    h1 {font-size: 8rem};
+}
+
+/*Wyjatek*/
+@media (max-width:320px){
+    header h3{
+        font-size: 1rem;
+    }
+    header h1
+    {
+        font-size:2rem;
+    }
     header hgroup{
         transform: rotate(-15deg);
     }
 }
-
-
+/*animation*/
 @keyframes arrow{
     0% {transform: translateY(-80px)}
     50% {transform: translateY(0px)}
