@@ -78,6 +78,29 @@ h3{
 .fa-angle-down{
     animation: arrow 1.5s infinite linear;  /*linear=jednostajnie*/
 }
+.btn{
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+  
+}
+.btn:hover{
+    background-color: white;
+    transition: 0.5s ease;
+}
+.about{
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+}
+.about:hover{
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+
 
 @media (orientation: portrait ){
     h3 span::after {
@@ -124,6 +147,18 @@ h3{
         transform: rotate(-15deg);
     }
 }
+
+@media(min-width:800px){
+    .fa-align-justify{
+        font-size: 0px;
+    }
+}
+@media(max-width:800px){
+    .btn, .about{
+        font-size: 0px;
+    }
+}
+
 /*animation*/
 @keyframes arrow{
     0% {transform: translateY(-80px)}

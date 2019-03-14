@@ -6,3 +6,8 @@
     }, 1200)                                         // czas w jakim ma sie przesunac
 })     
     //body przesunie sie o odleglosc dlugosci przegladarki w czasie 1200ms
+$(".about").on("click", function(){
+    $("body, html").animate({
+        scrollTop: $("main, body").offset().top
+    }, 1200)
+})
